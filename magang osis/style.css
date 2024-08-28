@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Nerko One", cursive;
     font-weight: 400;
     font-style: normal;
     min-height: 200vh;
@@ -73,13 +73,15 @@ nav .container {
     background-color: #1A2634;
 }
 
-nav .container ul.sticky-nav li.item{
-    display: inline-block;
+nav .container ul.sticky-nav a{
+    /* display: inline-block; */
     list-style: none;
-    font-size: 13px;
+    font-size: 20px;
     margin-left: 10px;
     text-transform: capitalize;
     cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* SECTION HERO */
@@ -96,44 +98,6 @@ section.hero .container {
     background-color: rgba(255, 255, 255, 0);
 }
 
-/* SECTION FACULTY */
-
-section.faculty {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 255px;
-    /* background-color: salmon;
-    gap: 10px;
-    padding: 10px; */
-}
-
-
-section.faculty div.item-faculty{
-    background-color: #00376a;
-    background-image: url(); 
-    background-size: cover; 
-    background-position: center center; 
-    height: 359.25px;
-    padding: 20px ;
-    padding-top: 100px;
-    padding-left: 40px;
-    background-position: center;
-}
-
-section.faculty div.item-faculty div.box-faculty{
-    height: 150px;
-    background-color: #1e2d49 ;
-    padding: 30px;
-    margin: 0px 40px 0px 40px;
-    margin-left: auto ;
-    margin-right: auto ;
-    background-image: url(assets/foto.jpg);
-    background-position: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-   
-}
 
 /* SECTION ABOUT */
 
@@ -161,14 +125,14 @@ section.about div.left img{
 section.about div.left h1{
     color: gray;
    text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     justify-items: center;
    
 }
 section.about div.right h1.right{
     color: white;
    text-align: left;
-   font-size: 40px;
+   font-size: 50px;
    padding-top: 250px;
    
 }
@@ -178,7 +142,7 @@ section.about div.right p{
 }
 section.about div.right p.sub{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
 }
 section.about div.right a{
     color: white;
@@ -191,12 +155,14 @@ section.about div.right a{
 section.floating-img {
     position: relative;
     top: 50px;
-    height: 190px;
+    height: 195px;
     width: 80%;
-    background-color: salmon;
     margin: 0 auto;
     z-index: 998;
-    background-image: url(assets/Gedung-Universitas-Prasetiya-Mulya-crop.jpg);
+    background-image: url("assets/Time-Banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* SECTION VIDEO UNI */
@@ -204,10 +170,6 @@ section.floating-img {
 section.video-uni {
     position: relative;
     height: 673px;
-    background-color: yellowgreen;
-    background-image: url(assets/Gedung-Universitas-Prasetiya-Mulya-crop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .video-container {
@@ -271,7 +233,7 @@ section.register {
 }
 
 section.register .left {
-    background-color: magenta;
+    background-color: #00376a;
    background-image: url();
    background-position: center;
    background-repeat: no-repeat;
@@ -279,9 +241,11 @@ section.register .left {
    width: 50%;
    height: 100%;
    float: left;
+    
+ 
 }
 section.register .right {
-  background-color: salmon;
+  background-color: #1A2634;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -350,7 +314,7 @@ footer section.nav-buttons a.wa-btn {
     text-align: left; 
     padding: 20px; 
      
-    color:white;
+    color: #FBE50B;;
 }
 
 /* NEWS */
@@ -371,8 +335,48 @@ footer section.nav-buttons a.wa-btn {
     color:white;
 }
 
-.photo{
-    background-image: url(); 
+.photo1{
+    background-image: url("assets/illustrate-movieNight.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 400px;
+}
+.photo2{
+    background-image: url("assets/apiUnggun-illustrate.webp"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+}
+.photo3{
+    background-image: url("assets/cooking-illustrate.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+}
+.photo4{
+    background-image: url("assets/criminalCase-illustrate.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+}
+.photo5{
+    background-image: url("assets/lettertree-banner.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+}
+.photo6{
+    background-image: url("assets/games-illustrate.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -383,14 +387,16 @@ footer section.nav-buttons a.wa-btn {
 section.news .news-items a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
     text-transform: capitalize;
     font-weight: bolder;
+
 }
 
 section.news .news-items h6{
     color: gray;
     margin-top: 20px;
+
 }
 
 /* INFORMATION */
