@@ -11,14 +11,14 @@ body {
     font-style: normal;
     min-height: 200vh;
     background-color: #00376a;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00eeff, 0 0 20px #00eeff, 0 0 25px #00eeff, 0 0 30px #00eeff, 0 0 35px #00eeff;
+    text-shadow: 0 0 1rem rgb(255, 255, 255);
 }
 
 .container {
     width: 85%;
     margin: 0 auto;
     background-color: aqua;
-    min-height: 40px;
+    min-height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -124,29 +124,29 @@ section.about div.left img{
 }
 
 section.about div.left h1{
-    color: gray;
+    color: rgb(255, 255, 255);
    text-align: center;
     font-size: 50px;
     justify-items: center;
    
 }
 section.about div.right h1.right{
-    color: white;
+    color: rgb(255, 255, 255);
    text-align: left;
    font-size: 50px;
    padding-top: 250px;
    
 }
 section.about div.right p{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 section.about div.right p.sub{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 section.about div.right a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -156,7 +156,7 @@ section.about div.right a{
 section.floating-img {
     position: relative;
     top: 50px;
-    height: 195px;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
     z-index: 998;
@@ -170,7 +170,7 @@ section.floating-img {
 
 section.video-uni {
     position: relative;
-    height: 673px;
+    height: 1200px;
 }
 
 .video-container {
@@ -316,8 +316,8 @@ footer section.nav-buttons a.wa-btn {
 .feature-items {
     text-align: left; 
     padding: 20px; 
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0040ff, 0 0 20px #0040ff, 0 0 25px #0040ff, 0 0 30px #0040ff, 0 0 35px #0040ff;
-    color: #FBE50B;;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e8e8e8, 0 0 20px #e8e8e8, 0 0 25px #e8e8e8, 0 0 30px #e8e8e8, 0 0 35px #e8e8e8;
+    color: #1f1f1f;;
 }
 
 /* NEWS */
@@ -417,12 +417,12 @@ section.news .news-items h6{
 .items {
     text-align: left; 
      
-    color:white;
+    color:rgb(0, 67, 134);
 }
 
 .copyright{
     height: 70px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 30px;
    
@@ -595,4 +595,3 @@ section.news .news-items h6{
         left: 100%;
     }
 }
-
