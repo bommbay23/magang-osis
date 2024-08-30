@@ -88,15 +88,21 @@ nav .container ul.sticky-nav a{
 /* SECTION HERO */
 section.hero {
     height: 100vh;
-    background-color: yellowgreen;
-    background-image: url('assets/nevanite_070800.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  /* background-color: yellowgreen; */
+  background-image: url('assets/nevanite_070800.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section.hero .container {
     background-color: rgba(255, 255, 255, 0);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -533,12 +539,12 @@ section.news .news-items h6{
 
     @media screen and(max-width: 900px){
         .wrapper .carousel{
-            grid-auto-columns: calc((100% / 3) - 9px) ;
+            grid-auto-columns: calc((100% / 2) - 9px) ;
         }
     }
     @media screen and(max-width: 600px){
         .wrapper .carousel{
-            grid-auto-columns: 100% ;
+            grid-auto-columns: 60% ;
         }
     }
 /* slider */
@@ -595,3 +601,52 @@ section.news .news-items h6{
         left: 100%;
     }
 }
+
+/* responsive */
+@media (max-width: 1200px) {
+    section.hero {
+      height: 60vh;
+    }
+    section.hero .container {
+      max-width: 900px;
+    }
+    section.news {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      section.news .news-items {
+        padding: 30px;
+      }
+      
+  }
+@media (max-width: 480px) {
+    section.hero {
+      height: 60vh;
+    }
+    section.hero .container {
+      max-width: 600px;
+    }
+    section.news {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      section.news .news-items {
+        padding: 20px;
+      }
+  }
+  
+
+@media (max-width: 479px) {
+    section.hero {
+      height: 40vh;
+    }
+    section.hero .container {
+      max-width: 300px;
+    }
+    section.news {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      section.news .news-items {
+        padding: 10px;
+      }
+      section.news .news-items a {
+        font-size: 18px;}
+  }
